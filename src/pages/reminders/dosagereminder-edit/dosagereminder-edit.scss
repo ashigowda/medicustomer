@@ -1,0 +1,21 @@
+page-dosagereminder-edit {
+  .scroll-content {
+    overflow: hidden;
+  }
+  .label-md {
+    color: map-get($colors, dark);
+    font-size: 15px;
+  }
+  .label-ios {
+    color: map-get($colors, dark);
+    font-size: 15px;
+  }
+  .small {
+    width: 80%;
+    margin-left: 10%;
+  }
+}
+
+ion-app.md [padding-left] {
+  padding-left: 5%;
+}

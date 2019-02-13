@@ -1,0 +1,16 @@
+page-make-payment {
+  .label-md {
+    color: map-get($colors, primary);
+    margin: 13px 8px 13px 5% !important;
+  }
+  .label-wp {
+    color: map-get($colors, primary);
+    margin: 13px 8px 13px 5% !important;
+  }
+  .scroll-content {
+    overflow: hidden;
+  }
+  .row {
+    align-items: center;
+  }
+}

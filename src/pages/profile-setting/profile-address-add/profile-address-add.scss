@@ -1,0 +1,23 @@
+page-profile-address-add {
+  .item-md {
+    width: 100% !important;
+  }
+  .item-md.item-block .item-inner {
+    padding-right: 0px;
+    border-bottom: 1px solid map-get($colors, light);
+  }
+  .item-ios {
+    width: 100% !important;
+  }
+  .item-ios.item-block .item-inner {
+    padding-right: 0px;
+    border-bottom: 1px solid map-get($colors, light);
+  }
+  .item-wp {
+    width: 100% !important;
+  }
+  .item-wp.item-block .item-inner {
+    padding-right: 0px;
+    border-bottom: 1px solid map-get($colors, light);
+  }
+}

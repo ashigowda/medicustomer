@@ -1,0 +1,38 @@
+<ion-header>
+  <header-main [title]='title'></header-main>
+</ion-header>
+
+<ion-content>
+  <button margin-top padding ion-button (click)="addReminder()" class="button-full1">
+    <ion-icon name="add-circle" style="font-size:40px" margin-right></ion-icon>Add Another Reminder</button>
+  <ion-list class="list" no-margin no-padding *ngFor=" let mem of members" radio-group>
+    <ion-card (click) = "gotoDetails()">
+      <ion-row no-padding no-margin>
+        <ion-col col-2 no-margin>
+          <ion-item no-lines no-margin>
+            <ion-icon item-left name="medkit" no-padding></ion-icon>
+          </ion-item>
+        </ion-col>
+        <ion-col col-8 no-padding no-margin>
+          <ion-item no-lines no-padding no-margin>
+            <ion-label no-padding no-margin class="medium primary label-a">
+              <b>{{mem.name}}</b>
+            </ion-label>
+          </ion-item>
+        </ion-col>
+        <ion-col no-padding no-margin>
+          <ion-radio value={{mem.dosageId}}></ion-radio>
+        </ion-col>
+      </ion-row>
+
+      <ion-row no-margin>
+        <ion-col col-2></ion-col>
+        <ion-col no-padding no-margin>
+          <ion-label no-margin class="xx-small light" style="margin-top:-22px">
+            <i>{{mem.time}}</i>
+          </ion-label>
+        </ion-col>
+      </ion-row>
+    </ion-card>
+  </ion-list>
+</ion-content>

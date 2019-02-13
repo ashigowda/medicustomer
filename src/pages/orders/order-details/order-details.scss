@@ -1,0 +1,15 @@
+page-order-details {
+  .col{
+    height: 20px;
+  }
+  .icon{
+    font-size:30px;
+  }
+  .border-a{
+    border-bottom: 1px solid map-get($colors, primary);
+    padding-bottom:6px;
+  }
+}
+ion-app.md [padding-top] {
+  padding-top: 4px !important;
+}

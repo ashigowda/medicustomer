@@ -1,0 +1,98 @@
+page-prescription-details {
+  .item {
+    background: none !important;
+  }
+  .div1 {
+    margin-top: 20%;
+  }
+  .label-md {
+    margin: 0px !important;
+  }
+  .label-wp {
+    margin: 0px !important;
+  }
+  .label-ios {
+    margin: 0px !important;
+  }
+  .div2 {
+    border-radius: 100px;
+    border: 1px solid map-get($colors, primary);
+    text-align: center;
+    margin: 3px;
+    padding: 3px
+  }
+  .col {
+    padding: 0px;
+  }
+  .content {
+    color: map-get($colors, primary)
+  }
+  .border {
+    border: 1px solid map-get($colors, danger);
+    text-align: center;
+    font-weight: bold;
+    border-radius: 5px;
+  }
+
+.card{
+  padding-left:10px;
+  padding-top:5px;
+}
+  .col {
+    padding: 0px;
+  }
+  .label {
+    font-weight: normal;
+  }
+  .color-a{
+    color:map-get($colors, color-a)
+  }
+  .icon-a{
+    color:map-get($colors, color-b);
+    font-size: 17px;
+  }
+  .col-x{
+    color:#556B2F;
+    font-size:12px;
+  }
+  .col-b{
+    color: #287;
+    font-size:13px;
+  }
+  .icon-b {
+    color: #287;
+    font-size: 17px;
+  }
+  .col-2{
+    color:#756089 !important;
+  }
+  ion-card img{
+    display: inline !important;
+  }
+  .icon-p {
+    color: #8f1440;
+    font-size: 17px;
+  }
+  .icon-c {
+    color: #556B2F;
+    font-size: 17px;
+  }
+  .item-md {
+    width: 100% !important;
+    margin: 0px !important;
+    padding: 0px !important;
+    border-bottom: 1px solid map-get($colors, dark);
+  }
+  .item-ios {
+    width: 100% !important;
+    border-bottom: 1px solid map-get($colors, dark);
+  }
+  .item-wp {
+    width: 100% !important;
+    border-bottom: 1px solid map-get($colors, dark) !important;
+  }
+  
+}
+ion-app.md [margin-left], ion-app.md [margin-left] .scroll-content {
+  margin-left: 12px !important;
+}

@@ -1,0 +1,67 @@
+<ion-header>
+  <header-main [title]="title"></header-main>
+</ion-header>
+
+<ion-content>
+  <ion-item no-lines no-padding class="devider" no-padding>
+    <ion-label class="label-small" no-padding no-margin>Parvathi</ion-label>
+  </ion-item>
+
+  <ion-item-group *ngFor="let prescription of appointmentList1" no-padding no-padding>
+    <ion-list no-margin>
+      <ion-item-sliding>
+        <ion-item (click)="viewprescription(prescription.prescriptionId,prescription.status)" lines no-padding no-margin>
+          <ion-row no-padding no-margin>
+            <ion-col col-6 class="small primary" no-padding>
+              {{prescription.prescriptionId}}
+            </ion-col>
+            <ion-col text-capitalize>
+              <p float-right style="color:#f43 !important;font-size:15px" no-padding>
+                <img src="../../../assets/imgs/images.jpg" style="width:18px;height:15px" no-padding no-margin>{{prescription.doctorName}}</p>
+            </ion-col>
+          </ion-row>
+
+          <ion-row no-padding>
+            <ion-col class="x-small col-2" no-padding no-margin>{{prescription.symptoms}}</ion-col>
+            <ion-col>
+              <p style="color:black;font-size:14px;color:darkgreen !important" float-right>
+                <ion-icon name="call" class="icon-a"></ion-icon> {{prescription.patientMob}}</p>
+            </ion-col>
+
+          </ion-row>
+
+          <ion-row no-padding>
+            <ion-col class="col-z" no-padding no-margin>
+              <ion-icon name="mail" class="mail-a"></ion-icon>
+              asha@gmail.com
+            </ion-col>
+
+            <ion-col class="small light">
+              <p float-right style="color:#8f1440 !important">
+                <img src="../../../assets/imgs/clinic.png" style="width:16px;height:15px" no-padding no-margin> {{prescription.clinic}}</p>
+            </ion-col>
+          </ion-row>
+
+          <ion-row>
+            <ion-col class="col-x" no-padding no-margin>
+              <ion-icon name="alarm" class="icon-c"></ion-icon>
+              {{prescription.date}}, {{prescription.time}}
+            </ion-col>
+            <ion-col no-padding>
+              <b class="status border" float-right>{{prescription.status}}</b>
+            </ion-col>
+          </ion-row>
+
+          <ion-row no-margin padding-bottom>
+            <ion-col col-9></ion-col>
+          </ion-row>
+        </ion-item>
+        <ion-item-options>
+
+          <button text-wrap ion-button (click)="editAppointment(appointment.patientId)" class="border-a">
+            <ion-icon name="create" class="icon-white"></ion-icon> Edit</button>
+        </ion-item-options>
+      </ion-item-sliding>
+    </ion-list>
+  </ion-item-group>
+</ion-content>

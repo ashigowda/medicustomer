@@ -1,0 +1,15 @@
+page-wallet-balance {
+  .scroll-content {
+    overflow: hidden;
+  }
+  .label-md {
+    color: map-get($colors, dark);
+    margin: 0px 8px 0px 5% !important;
+    font-size: 15px;
+  }
+  .label-p {
+    text-align: center;
+    font-size: 35px;
+    color: map-get($colors, primary );
+  }
+}

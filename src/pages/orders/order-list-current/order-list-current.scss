@@ -1,0 +1,73 @@
+page-order-list-current {
+  .label {
+    margin: 0px !important;
+  }
+  .color-a {
+    color: map-get($colors, color-a)
+  }
+  .color-b {
+    color: map-get($colors, color-b)
+  }
+  .color-x {
+    color: #287;
+    font-size:13px;
+  }
+  .col-x{
+    color:#556B2F;
+    font-size:12px;
+  }
+  .p-b{
+    color:#808000 !important;
+  }
+  .icon-a {
+    font-size: 17px;
+    color: map-get($colors, color-b);
+  }
+  .icon-b {
+    color: #287;
+    font-size: 17px;
+  }
+  .icon-c {
+    color: #556B2F;
+    font-size: 17px;
+  }
+  .p-a {
+    color: #8B4513 !important;
+    font-size: 13px;
+  }
+  .col {
+    padding: 0px;
+  }
+  .label {
+    font-weight: normal;
+    margin: 0px !important;
+  }
+  .list-md {
+    background: none !important;
+    width: 100% !important;
+    margin: 0px !important;
+    padding: 0px !important;
+  }
+  .item-ios {
+    background: none !important;
+    width: 100% !important;
+    border-bottom: 1px solid map-get($colors, dark);
+  }
+  .item-md {
+    background: none !important;
+    width: 100% !important;
+    border-bottom: 1px solid map-get($colors, dark);
+  }
+}
+
+ion-app.md [padding-right] {
+  padding-right: 8px !important;
+}
+
+ion-app.md [padding-top] {
+  padding-top: 6px !important;
+}
+
+ion-app.md [padding-bottom] {
+  padding-bottom: 6px !important;
+}

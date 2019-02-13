@@ -1,0 +1,34 @@
+<ion-header>
+  <header-main [title]="title"></header-main>
+</ion-header>
+
+<ion-content>
+  <ion-list no-padding no-margin>
+    <ion-grid no-padding no-margin>
+      <ion-row class="header2" no-padding no-margin>
+        <ion-col col-3 class="x-small">Date </ion-col>
+        <ion-col col-3 class="x-small">Debit
+          <br/>(in Rs)</ion-col>
+        <ion-col col-3 class="x-small">Credit
+          <br/>(in Rs)</ion-col>
+        <ion-col col-3 class="x-small">Balance
+          <br/>(in Rs)</ion-col>
+      </ion-row>
+
+    </ion-grid>
+    <ion-item-sliding *ngFor="let item of transactions;let index=index; let odd=odd; let even=even;">
+      <ion-item [ngClass]="{ odd: odd, even: even }" no-lines no-padding no-margin>
+        <ion-row margin-left>
+          <ion-col col-3 no-padding class="x-small light"> {{item.date}}</ion-col>
+          <ion-col col-3 class="x-small light"> {{item.debit}}</ion-col>
+          <ion-col col-3 class="x-small light"> {{item.credit}}</ion-col>
+          <ion-col col-3 class="x-small light"> {{item.balance}}</ion-col>
+        </ion-row>
+      </ion-item>
+      <ion-item-options [ngClass]="{ odd: odd, even: even }">
+        <button (click)="editfields(item)" id="color1">
+          <ion-icon name="create" class="icon-cls"></ion-icon> Edit</button>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
+</ion-content>

@@ -1,0 +1,73 @@
+page-chat-history {
+  .div2 {
+    margin-top: -55%;
+    margin-left: 76%;
+    width: 55px;
+    height: 55px;
+    position: fixed;
+    border-radius: 100%;
+    background: map-get($colors, primary);
+  }
+  .icon2 {
+    color: map-get($colors, white-a);
+    padding-left: 14px !important;
+    padding-top: 5px !important;
+    font-size: 45px;
+  }
+  .div1 {
+    border-radius: 100%;
+    background: map-get($colors, light);
+    width: 60px;
+    height: 60px;
+    color: map-get($colors, black-a);
+    padding-left: 20px;
+    padding-top: 20px;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  .item-md[detail-push] .item-inner,
+  button.item-md:not([detail-none]) .item-inner,
+  a.item-md:not([detail-none]) .item-inner {
+    padding-right: 32px;
+    background-position: right 14px center;
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+  }
+  .item-wp[detail-push] .item-inner,
+  button.item-wp:not([detail-none]) .item-inner,
+  a.item-wp:not([detail-none]) .item-inner {
+    padding-right: 32px;
+    background-position: right 14px center;
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+  } // .color-1{
+  //   color:#333333;font-weight:bold;font-size:18px;
+  // }
+  .color-2 {
+    margin-right: 4%;
+  }
+  .color-3 {
+    color: map-get($colors, primary);
+    font-weight: normal;
+  }
+  .color-4 {
+    color: map-get($colors, danger);
+    font-weight: normal;
+  }
+  .color-5 {
+    color: map-get($colors, dark-a);
+    font-size: 13px;
+    font-style: italic;
+    margin-top: 1%
+  }
+  .icon1 {
+    font-size: 35px;
+  }
+  .row1 {
+    height: 35px;
+  }
+  ion-item {
+    width: 100% !important;
+    margin: 0px !important;
+  }
+}

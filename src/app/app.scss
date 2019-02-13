@@ -1,0 +1,585 @@
+// http://ionicframework.com/docs/theming/
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+.content {
+  background-color: map-get($colors, vibrant);
+}
+
+.toolbar-title-md {
+  font-size: 24px;
+  color: map-get($colors, white-a);
+  text-align: center;
+  font-weight: bold;
+  overflow: visible;
+}
+
+.toolbar-title-ios {
+  font-size: 24px;
+  color: map-get($colors, white-a);
+  ;
+  text-align: center;
+  font-weight: bold;
+  overflow: visible;
+}
+
+.toolbar-title-wp {
+  font-size: 24px;
+  color: map-get($colors, white-a);
+  text-align: center;
+  font-weight: bold;
+  overflow: visible;
+  text-transform: none;
+}
+
+.toolbar-wp {
+  text-align: center;
+  vertical-align: middle;
+  min-height: 56px;
+}
+
+.text-input-wp {
+  border: 0px;
+  padding: 0px;
+  margin: 0 0 0 16px !important;
+}
+
+ion-textarea {
+  width: 90%;
+  border-radius: 5px;
+  border: 1px solid map-get($colors, primary);
+  height: 60px;
+  max-width: 90% !important;
+  margin-left: 5% !important;
+}
+
+.segment-wp .segment-button {
+  height: 4rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+  line-height: 4rem;
+  text-transform: uppercase;
+  color: map-get($colors, black-a);
+  background-color: transparent;
+  opacity: 0.5;
+  padding: 0 12px;
+}
+
+//   .text-input-md {
+//     //  border:1px solid  map-get($colors,primary);
+//       width:90%!important;
+//       margin-left:5%;
+//       margin-bottom:5%;
+//       padding:5px;
+//       height:80px;
+//       border-radius: 5px;
+//   }
+.text-input-wp {
+  border: 1px solid map-get($colors, primary);
+  width: 90% !important;
+  margin-left: 5%;
+  margin-bottom: 5%;
+  padding: 5px;
+  height: 80px;
+  border-radius: 5px;
+}
+
+.text-input-ios {
+  border: 1px solid map-get($colors, primary);
+  width: 90% !important;
+  margin-left: 5%;
+  margin-bottom: 5%;
+  padding: 5px;
+  height: 80px;
+  border-radius: 5px;
+}
+
+.subTitle {
+  background-color: map-get($colors, primary);
+  font-size: 18px;
+  width: 100%;
+  min-height: 40px;
+  text-align: center;
+  font-weight: bold;
+  color: map-get($colors, white-a) !important;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.toolbar-title-ios {
+  color: map-get($colors, white-a);
+  ;
+  text-align: center;
+  overflow: visible;
+  font-weight: bold;
+}
+
+.toolbar-background {
+  background: $app-background;
+  color: map-get($colors, white-a) !important;
+}
+
+.label-md {
+  margin: 13px 8px 5px 5%;
+  color: map-get($colors, dark);
+  font-size: 16px;
+}
+
+.label-ios {
+  margin: 13px 8px 5px 5% !important;
+  color: map-get($colors, dark);
+  font-size: 16px;
+}
+
+.label-ios {
+  color: map-get($colors, dark);
+  margin: 13px 8px 0px 5% !important;
+  font-size: 15px;
+}
+
+.label-small {
+  color: map-get($colors, white-a) !important;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.item-md {
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 90%;
+}
+
+.item-md[detail-push] .item-inner,
+button.item-md:not([detail-none]) .item-inner,
+a.item-md:not([detail-none]) .item-inner {
+  float: right;
+  background-position: right -5px center;
+  background-repeat: no-repeat;
+  background-size: 22px 22px;
+}
+
+.item-wp[detail-push] .item-inner,
+button.item-wp:not([detail-none]) .item-inner,
+a.item-wp:not([detail-none]) .item-inner {
+  float: right;
+  background-position: right 5px center;
+  background-repeat: no-repeat;
+  background-size: 22px 22px;
+}
+
+.item-ios[detail-push] .item-inner,
+button.item-ios:not([detail-none]) .item-inner,
+a.item-ios:not([detail-none]) .item-inner {
+  float: right;
+  background-position: right 5px center;
+  background-repeat: no-repeat;
+  background-size: 22px 22px;
+  padding-left: 5px !important;
+}
+
+.button-add {
+  width: 55px;
+  height: 55px;
+  border-radius: 100%;
+  background: $app-background;
+  float: right;
+  bottom: 70px !important;
+  right: 20px !important;
+  position: fixed;
+  font-weight: normal;
+}
+
+.button-full {
+  width: 90%;
+  height: 40px;
+  margin-left: 5%;
+  border-radius: 5px;
+  font-weight: normal;
+}
+
+.icon-add {
+  color: map-get($colors, white-a) !important;
+  padding-left: 14px;
+  padding-top: 5px;
+  font-size: 30px;
+  margin: 0px !important;
+  font-weight: bold;
+}
+
+.icon-small {
+  font-size: 20px;
+  color: map-get($colors, primary) !important;
+}
+.icon-white{
+  font-size: 25px;
+  color: map-get($colors, white-a) !important;
+}
+.bar-button-md {
+  margin: 0 0.2rem;
+  padding: 0 5px;
+  border-radius: 2px;
+  height: 32px;
+  border: 0;
+  font-size: 35px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: map-get($colors, white-a) !important;
+}
+
+.bar-button-ios {
+  margin: 0 0.2rem;
+  padding: 0 5px;
+  border-radius: 2px;
+  height: 32px;
+  border: 0;
+  font-size: 35px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: map-get($colors, white-a) !important;
+}
+
+.back-button-icon-md {
+  font-weight: bold;
+  font-size: 35px !important;
+  color: map-get($colors, white-a) !important;
+}
+
+.back-button-icon-wp {
+  font-weight: bold;
+  font-size: 35px !important;
+  color: map-get($colors, white-a) !important;
+}
+
+.back-button-icon-ios {
+  font-weight: bold;
+  font-size: 35px !important;
+  color: map-get($colors, white-a) !important;
+}
+
+.button-full1 {
+  background: map-get($colors, white-a) !important;
+  color: map-get($colors, primary) !important;
+  border-radius: 100px !important;
+  text-transform: none;
+  width: 90%;
+  margin-left: 5%;
+  height: 40px;
+}
+
+.button-half {
+  width: 45%;
+  margin-left: 3% !important;
+  border-radius: 5px;
+  height: 45px;
+  font-weight: bold;
+  background-color: map-get($colors, primary);
+  text-transform: none !important;
+}
+
+.button-footer {
+  width: 100%;
+  text-transform: none;
+  height: 45px;
+  margin: 0px !important;
+  border-radius: 0px !important;
+}
+
+ion-input {
+  border: 1px solid map-get($colors, primary);
+  border-radius: 5px;
+  height: 40px;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.button-md {
+  text-transform: none;
+  border-radius: 5px;
+  color: map-get($colors, white-a)
+}
+
+.select-text {
+  overflow: visible;
+}
+
+p {
+  color: #666666 !important;
+  margin-left: 5% !important;
+}
+
+.datetime-md {
+  width: 90%;
+  text-transform: none;
+  font-size: 24px;
+  border: 1px solid map-get($colors, primary);
+  height: 40px !important;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.datetime-ios {
+  width: 90%;
+  text-transform: none;
+  font-size: 24px;
+  border: 1px solid map-get($colors, primary);
+  margin-left: 5%;
+  height: 40px !important;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.datetime-wp {
+  width: 90%;
+  text-transform: none;
+  font-size: 24px;
+  border: 1px solid map-get($colors, primary);
+  margin-left: 5%;
+  height: 40px !important;
+  border-radius: 5px;
+  font-size: 15px;
+  padding: 3px;
+}
+
+.datetime-wp .datetime-text {
+  border: 0px;
+}
+
+.icon-small1 {
+  font-size: 20px !important;
+}
+
+.title.title-md {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  height: 100%;
+  width: 70%;
+  text-align: center;
+}
+
+.title.title-wp {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  height: 100%;
+  width: 70%;
+  text-align: center;
+}
+
+.row {
+  align-items: center !important
+}
+
+.subTitle {
+  background-color: map-get($colors, primary);
+  font-size: 18px;
+  width: 100%;
+  min-height: 40px;
+  text-align: center;
+  font-weight: bold;
+  color: map-get($colors, white-a) !important;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.select-md {
+  width: 90%;
+  border-radius: 5px;
+  border: 1px solid map-get($colors, primary);
+  height: 38px;
+  max-width: 100% !important;
+  margin-left: 5% !important;
+}
+
+.select-wp {
+  width: 90%;
+  border-radius: 5px;
+  border: 1px solid map-get($colors, primary);
+  height: 38px;
+  max-width: 100% !important;
+  margin-left: 5% !important;
+}
+
+.select-ios {
+  width: 90%;
+  border-radius: 5px;
+  border: 1px solid map-get($colors, primary);
+  height: 40px;
+  max-width: 100% !important;
+  margin-left: 5% !important;
+}
+
+.alert-sub-title {
+  color: map-get($colors, primary)
+}
+
+.alert-md .alert-title {
+  font-size: 22px;
+  text-align: center;
+  font-weight: bold;
+  color: map-get($colors, primary);
+}
+
+ion-label {
+  overflow: visible;
+}
+
+.alert-title {
+  color: map-get($colors, primary);
+  text-align: center;
+}
+
+
+.alert-sub-title {
+  text-align: center;
+}
+
+.item-md.item-block .item-inner {
+  width: 90%;
+  border-bottom: 1px solid map-get($colors, light);
+}
+
+.item-wp.item-block .item-inner {
+  width: 90%;
+  border-bottom: 1px solid map-get($colors, light);
+}
+
+.item-ios.item-block .item-inner {
+  width: 90%;
+  border-bottom: 1px solid map-get($colors, light);
+}
+
+.modal-wrapper {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.fab-button {
+  color: map-get($colors, white-a) !important;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.fab-btn {
+  width: 100%;
+  margin-left: 5%;
+  margin-right: 5%;
+  border-radius: 100%;
+  color: map-get($colors, white-a) !important;
+  font-weight: bold;
+}
+
+.fab-md {
+  background: $app-background;
+  color: map-get($colors, white-a) !important;
+}
+
+.fab-ios {
+  background: $app-background;
+  color: map-get($colors, white-a) !important;
+}
+
+.fab-wp {
+  background: $app-background;
+  color: map-get($colors, white-a) !important;
+}
+
+.tabs-md[tabsLayout=icon-top] .has-icon .tab-button-text {
+  margin-top: 0px;
+  margin-bottom: 0;
+  overflow: visible;
+  font-size: 9px !important;
+}
+
+.tabs-ios[tabsLayout=icon-top] .has-icon .tab-button-text {
+  margin-top: 0px;
+  margin-bottom: 0;
+  overflow: visible;
+  font-size: 9px;
+}
+
+.tabs-ios .tab-button-icon {
+  margin-bottom: 1px;
+  min-width: 30px;
+  height: 30px;
+  font-size: 25px;
+  color: #8c8c8c;
+}
+
+.tabs-md .tab-button-icon {
+  margin-bottom: 1px;
+  min-width: 30px;
+  height: 30px;
+  font-size: 25px;
+  color: #8c8c8c;
+}
+
+.xx-large {
+  font-size: 22px !important;
+  color: map-get($colors, primary);
+}
+
+.large {
+  font-size: 18px !important;
+}
+
+.medium {
+  font-size: 16px !important;
+}
+
+.small {
+  font-size: 15px !important;
+}
+
+.x-small {
+  font-size: 14px !important;
+}
+.status {
+  background-color: map-get($colors, change);
+  color: map-get($colors, white-a);
+}
+.border {
+  padding-left: 6px;
+  padding-right: 6px;
+  text-align: center;
+  border-radius: 6px;
+}
+.xx-small {
+  font-size: 12px !important;
+  color: map-get($colors, dark-a) !important;
+}
+
+.dark {
+  color: map-get($colors, black-a);
+}
+.white {
+  color: map-get($colors, white-a);
+}
+.light {
+  color: map-get($colors, dark);
+}
+
+.primary {
+  // color: #0077c3;
+  color: map-get($colors, primary);
+}
+
+hr {
+  border-top: 1px solid map-get($colors, primary);
+  margin-left: -16px
+}

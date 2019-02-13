@@ -1,0 +1,25 @@
+<ion-header>
+  <header-main [title]="title"></header-main>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-label class="middle light">Name:</ion-label>
+    <ion-input type="text" placeholder="Name" [(ngModel)]="name"></ion-input>
+
+    <ion-label class="middle light">Date Of Birth:</ion-label>
+    <ion-item no-padding>
+      <ion-datetime displayFormat='DD/MM/YYYY' placeholder="DOB" [(ngModel)]="dob"></ion-datetime>
+    </ion-item>
+
+    <ion-label class="middle light">Relationship With Patient:</ion-label>
+    <ion-input type="text" placeholder="Relation" [(ngModel)]="relation"></ion-input>
+
+    <ion-label class="middle light">Blood Group:</ion-label>
+    <ion-input type="text" placeholder="Blood Group" [(ngModel)]="blood" margin-bottom></ion-input>
+  </ion-card>
+</ion-content>
+
+<ion-footer no-border>
+  <button ion-button class="button-footer" (click)='gotoManagePatient()' margin-top>Add Patient</button>
+</ion-footer>

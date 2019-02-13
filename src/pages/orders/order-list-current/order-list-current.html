@@ -1,0 +1,29 @@
+<ion-header>
+  <header-main [title]='title'></header-main>
+</ion-header>
+
+<ion-content>
+  <ion-segment [(ngModel)]="tabIndex">
+    <ion-segment-button value="0">
+      Orders
+    </ion-segment-button>
+    <ion-segment-button value="1">
+      For Payment
+    </ion-segment-button>
+    <ion-segment-button value="2">
+      For Delivery
+    </ion-segment-button>
+  </ion-segment>
+
+  <div [ngSwitch]="tabIndex">
+    <div padding-bottom *ngSwitchCase="0">
+      <order-list [list]='orders' [orderStatus]='order'></order-list>
+    </div>
+    <div padding-bottom *ngSwitchCase="1">
+      <order-list [list]='orders' [orderStatus]='payment'></order-list>
+    </div>
+    <div padding-bottom *ngSwitchCase="2">
+      <order-list [list]='orders' [orderStatus]='delivery'></order-list>
+    </div>
+  </div>
+</ion-content>

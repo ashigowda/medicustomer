@@ -1,0 +1,20 @@
+<ion-header>
+  <header-main [title]='title'></header-main>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-label class="medium">Name Of The Patient:</ion-label>
+    <ion-input type="text" placeholder="Name" [(ngModel)]="name"></ion-input>
+    <p class="x-small">The bill will be generated on patient name</p>
+
+    <ion-label class="medium">Relation Ship With Patient(Optional):</ion-label>
+    <ion-input type="text" placeholder="Relation" [(ngModel)]="relation"></ion-input>
+
+    <p margin-bottom class="x-small"> This helps you to manage family's description</p>
+  </ion-card>
+</ion-content>
+
+<ion-footer no-border no-padding no-margin>
+  <button ion-button class="button-footer" (click)="gotoPatientListPage()">Save Patient</button>
+</ion-footer>

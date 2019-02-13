@@ -1,0 +1,31 @@
+page-appointments-manage {
+  .col {
+    height: 28px;
+  }
+  .item-md[detail-push] .item-inner,
+  button.item-md:not([detail-none]) .item-inner,
+  a.item-md:not([detail-none]) .item-inner {
+    float: right;
+    background-position: right -5px center;
+    background-repeat: no-repeat;
+    background-size: 22px 22px;
+    margin-top: 10px
+  }
+  .item-ios[detail-push] .item-inner,
+  button.item-md:not([detail-none]) .item-inner,
+  a.item-md:not([detail-none]) .item-inner {
+    float: right;
+    background-position: right -5px center;
+    background-repeat: no-repeat;
+    background-size: 22px 22px;
+    margin-top: 10px
+  }
+  .label-a {
+    margin-top: -8px;
+    margin-left: 0px;
+  }
+}
+
+ion-app.md [padding-top] {
+  padding-top: 6px !important;
+}

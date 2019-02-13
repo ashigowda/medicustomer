@@ -1,0 +1,92 @@
+page-chat-register {
+  .toolbar-title-md {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: map-get($colors, primary);
+    margin-top: 0;
+  }
+  .toolbar-title-ios {
+    color: map-get($colors, primary);
+  }
+  .icon1 {
+    font-size: 35px;
+  }
+  hr {
+    border-top: 2px solid map-get($colors, primary);
+  }
+  .icon-a {
+    font-size: 30px;
+    color: map-get($colors, primary);
+    margin-left: 85%;
+  }
+  .label-a {
+    margin-left: 7%;
+    margin-right: 7%;
+    font-style: italic;
+    font-size: 14px;
+    color: map-get($colors, primary);
+  }
+  .label1 {
+    margin-top: 20%;
+    padding-top: 2%;
+    padding-left: 7%;
+    font-size: 16px;
+    color: map-get($colors, dark);
+    margin-top: 0px;
+    font-weight: bold;
+  }
+  .label-x {
+    color: map-get($colors, danger);
+    font-size: 20px;
+    padding-top: 60%;
+  }
+  .text {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  ion-input,
+  ion-textarea {
+    border: 1px solid map-get($colors, primary);
+    height: 40px;
+    width: 86%;
+    margin-left: 7%;
+  }
+  .select1 {
+    margin-left: 7%;
+    padding: 10px;
+    border: 1px solid map-get($colors, primary) !important;
+    border-radius: 0;
+    max-width: 86%;
+  }
+  .btn-m {
+    margin-top: 20%;
+    margin-left: 7%;
+    margin-right: 7%;
+    width: 86%;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+  }
+  .label-md {
+    margin: 4px;
+  }
+  .label-ios {
+    margin: 3px;
+  }
+  .scroll-content {
+    overflow: hidden;
+  }
+  segment-wp .segment-button {
+    height: 4rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    line-height: 4rem;
+    text-transform: none;
+    color: map-get($colors, primary); //background-color: transparent;
+    opacity: 0.5;
+    width: 33% !important;
+    padding: 0 6px;
+  }
+}

@@ -1,0 +1,14 @@
+page-prescription-upload {
+  .button-upload {
+    width: 90%;
+    margin-left: 5%;
+    height: 45px;
+    border-radius: 5px;
+    color: map-get($colors, white-a);
+    font-weight: bold;
+  }
+  .icon-a {
+    font-size: 35px;
+    color: white;
+  }
+}

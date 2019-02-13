@@ -1,0 +1,40 @@
+<ion-header>
+  <header-main [title]='title'></header-main>
+</ion-header>
+
+<ion-content>
+  <button margin-top padding ion-button (click)="addPatient()" class="button-full1 medium">
+    <ion-icon name="add-circle" style="font-size:40px" margin-right></ion-icon>Add Another Patient</button>
+
+  <ion-list no-margin no-padding *ngFor=" let mem of members" [(ngModel)]="patientId" radio-group>
+    <ion-card no-padding class="item item-radio">
+      <ion-row>
+          <ion-col col-1 no-margin no-padding>
+              <ion-icon name = "person" margin-left></ion-icon>
+            </ion-col>
+        <ion-col col-9>
+          <ion-row>
+            <ion-label>
+              <b class="medium primary">{{mem.name}}</b>
+              <i class="i-a">({{mem.age}} Years)</i>
+            </ion-label>
+          </ion-row>
+
+          <ion-row>
+            <ion-label class="xx-small light">
+              <i>{{mem.relation}}</i>
+            </ion-label>
+          </ion-row>
+
+        </ion-col>
+        <ion-col padding-right>
+          <ion-radio value={{mem.patientId}}></ion-radio>
+        </ion-col>
+      </ion-row>
+    </ion-card>
+  </ion-list>
+</ion-content>
+
+<ion-footer no-border no-padding no-margin>
+  <button ion-button class="button-footer" (click)="gotouploadPrescriptionsPage()">Upload Prescriptions</button>
+</ion-footer>

@@ -1,0 +1,55 @@
+<div *ngFor="let item of orders" no-margin no-padding>
+  <div *ngIf="orderStatus == item.orderStatus" no-margin no-padding>
+    <ion-list no-margin no-padding>
+      <ion-item lines padding-bottom no-margin>
+        <div (click)='gotoDetails(item)'>
+          <ion-row no-margin padding-top>
+            <ion-col class="medium primary" text-capitalize no-margin no-padding>
+              {{item.patientName}}
+            </ion-col>
+            <ion-col class="medium color-a" no-margin padding-right>
+              <b float-right>{{item.id}}</b>
+            </ion-col>
+          </ion-row>
+
+          <ion-row no-margin>
+            <ion-col class="x-small color-b">
+              <ion-icon name="call" class="icon-a"></ion-icon> 9632474636</ion-col>
+            <ion-col text-capitalize padding-right>
+              <p float-right class="p-b">
+                {{item.payment}}</p>
+            </ion-col>
+          </ion-row>
+
+          <ion-row no-margin>
+            <ion-col class="color-x" no-padding no-margin>
+              <ion-icon name="list-box" class="icon-b"></ion-icon>
+              {{item.noOfPescriptions}}
+            </ion-col>
+            <ion-col padding-right>
+              <p float-right class="p-a">{{item.deliveryAddress.address}},{{item.deliveryAddress.city}},{{item.deliveryAddress.pincode}}</p>
+            </ion-col>
+          </ion-row>
+
+          <ion-row padding-bottom no-margin>
+            <ion-col class="col-x" no-padding no-margin>
+              <ion-icon name="alarm" class="icon-c"></ion-icon>
+              {{item.date}}, {{item.time}}
+            </ion-col>
+            <ion-col padding-right>
+              <p float-right style="color:#ff4400 !important">{{item.orderStatus}}</p>
+            </ion-col>
+          </ion-row>
+        </div>
+
+        <ion-row no-padding no-margin *ngIf="orderStatus == 'Waiting For Payment'">
+          <ion-col col-3> </ion-col>
+          <ion-col no-padding>
+            <button ion-button class="button-full" (click)="makePayment(item.id)" no-padding>View Invoice</button>
+          </ion-col>
+          <ion-col col-3></ion-col>
+        </ion-row>
+      </ion-item>
+    </ion-list>
+  </div>
+</div>

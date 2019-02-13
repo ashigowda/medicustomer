@@ -1,0 +1,228 @@
+<div class="subTitle" style="padding-top:3%">Order Number: KE2353</div>
+
+<ion-card (click)="toggleDetails(data1)" data-toggle="collapse" padding-left padding-right padding-bottom>
+  <ion-row>
+    <ion-col col-10 class="primary medium">
+      <b> Prescription Details</b>
+    </ion-col>
+    <ion-col>
+      <ion-icon *ngIf="data1.showDetails != true" name="ios-arrow-forward"></ion-icon>
+      <ion-icon *ngIf="data1.showDetails == true" name="ios-arrow-down"></ion-icon>
+    </ion-col>
+  </ion-row>
+
+  <div *ngIf="data1.showDetails">
+    <hr>
+    <ion-row padding-top>
+      <ion-col col-5 no-padding>
+        <b>Patient Name</b>
+      </ion-col>
+      <ion-col col-1>:</ion-col>
+      <ion-col col-6 class="primary medium">Madhu</ion-col>
+    </ion-row>
+    <ion-row padding-top>
+      <ion-col col-5 no-padding>
+        <b>Prescriptions</b>
+      </ion-col>
+      <ion-col col-1>:</ion-col>
+      <ion-col col-3 *ngFor="let item of quotationDetais">
+        <img src="../../../assets/imgs/{{item.quoteImage}}.jpg" style="height:50px;width:60px" alt=" image" class="image" />
+      </ion-col>
+    </ion-row>
+
+    <ion-row text-wrap padding-top>
+      <ion-col col-1 no-padding>
+        <ion-icon name="radio-button-on" class="radio-a"></ion-icon>
+      </ion-col>
+      <ion-col no-padding> will inform when he calls to confirm my order</ion-col>
+    </ion-row>
+    <ion-row text-wrap padding-top>
+      <div>
+        <b>Notes:</b> I need medicine from the same company as prescribed in the Prescriptions</div>
+    </ion-row>
+
+    <ion-row padding-top padding-right>
+      <ion-col no-padding>
+        <b>Delivery address:</b>
+      </ion-col>
+      <ion-icon name="call" class="icon-small"></ion-icon>9632589636
+    </ion-row>
+    <ion-row>
+      <ion-col no-padding>Asha,</ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col no-padding>Jaya Nagar,</ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col no-padding>Bangalore-509934</ion-col>
+    </ion-row>
+  </div>
+</ion-card>
+
+<ion-card (click)="toggleDetails1(data2)" data-toggle="collapse" padding-left padding-right>
+  <ion-row>
+    <ion-col col-10 class="primary medium">
+      <b> Quotation Details </b>
+    </ion-col>
+    <ion-col>
+
+      <ion-icon class="icon2" *ngIf="data2.showDetails != true" name="ios-arrow-forward"></ion-icon>
+      <ion-icon class="icon2" *ngIf="data2.showDetails == true" name="ios-arrow-down"></ion-icon>
+    </ion-col>
+  </ion-row>
+
+  <div *ngIf="data2.showDetails">
+    <hr>
+    <div class="div-a" no-padding no-margin>
+      <ion-row>
+        <ion-col col-2>
+          <ion-icon name="paper" class="icon-a"></ion-icon>
+        </ion-col>
+        <ion-col class="small">
+          <b>Quotation</b>
+        </ion-col>
+      </ion-row>
+      <div>
+        <ion-row *ngFor="let item of quotationDetais" padding-bottom>
+          <ion-col col-2></ion-col>
+          <ion-col col-3>
+            <img src="../../../assets/imgs/{{item.quoteImage}}.jpg" class="img-a" alt=" image" class="image" />
+          </ion-col>
+          <ion-col col-4></ion-col>
+          <ion-col col-3>
+            <div>Rs.{{item.quotePrice}}/-</div>
+          </ion-col>
+        </ion-row>
+      </div>
+    </div>
+
+    <div margin-bottom>
+      <ion-row>
+        <ion-col col-2>
+          <ion-icon name="home" class="icon-a"></ion-icon>
+        </ion-col>
+        <ion-col no-padding class="small">
+          <b> Store Details</b>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col col-2></ion-col>
+        <ion-col no-padding>
+          <b>Store name and address:</b>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col col-2></ion-col>
+        <ion-col no-padding>Ganesh Medical Store</ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col col-2></ion-col>
+        <ion-col no-padding>Jaya Nagar,</ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col col-2></ion-col>
+        <ion-col no-padding>Bangalore, 509934</ion-col>
+      </ion-row>
+
+      <ion-row padding-top>
+        <ion-col col-2></ion-col>
+        <ion-col no-padding>
+          <b>Pharmacist Name(Licence Number)</b>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col col-2></ion-col>
+        <ion-col no-padding>Ganesha(KNK201711)</ion-col>
+      </ion-row>
+
+      <ion-row padding-top>
+        <ion-col col-2></ion-col>
+        <ion-col no-padding>
+          <b>Delivery Boy Name</b>
+        </ion-col>
+      </ion-row>
+
+      <ion-row padding-bottom>
+        <ion-col col-2></ion-col>
+        <ion-col no-padding>not yet assigned</ion-col>
+      </ion-row>
+    </div>
+  </div>
+</ion-card>
+
+<div padding class="text">
+  <ion-row>
+    <ion-col col-6>
+      <div>
+        <b>Delivered Charges:</b>
+      </div>
+    </ion-col>
+    <ion-col no-padding no-margin>
+      <ion-label no-padding no-margin> Rs.{{quotationDetais[0].orderDeliveryCharge}}/-</ion-label>
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+    <ion-col col-6>
+      <div>
+        <b> Discount Offered:</b>
+      </div>
+    </ion-col>
+    <ion-col no-padding no-margin>
+      <ion-label no-padding no-margin> Rs.{{quotationDetais[0].quoteDiscount}}/-</ion-label>
+    </ion-col>
+  </ion-row>
+  <hr>
+
+  <ion-row>
+    <ion-col col-6 no-padding no-margin>
+      <div>
+        <b>Total Order Value:</b>
+      </div>
+    </ion-col>
+    <ion-col no-padding no-margin>
+      <ion-label no-padding no-margin> Rs.{{quotationDetais[0].quoteTotal}}/-</ion-label>
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+    <ion-col col-6 no-padding no-margin>
+      <div>
+        <b>Payment Mode:</b>
+      </div>
+    </ion-col>
+    <ion-col no-padding no-margin>
+      <ion-label no-padding no-margin> Online</ion-label>
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+    <ion-col col-6 no-padding no-margin>
+      <div>
+        <b>Balance :</b>
+      </div>
+    </ion-col>
+    <ion-col no-padding no-margin>
+      <ion-label no-padding no-margin> Rs.0/-</ion-label>
+    </ion-col>
+  </ion-row>
+</div>
+
+<div margin-left>
+  <ion-row>
+    <ion-col no-padding no-margin class="small">
+      <b> Approx. Delivery Day and Time</b>
+    </ion-col>
+  </ion-row>
+  <ion-row padding-bottom no-margin>
+    <ion-col no-padding no-margin>
+      <ion-label no-padding no-margin class="x-small primary">Today Around 11:00PM</ion-label>
+    </ion-col>
+  </ion-row>
+</div>

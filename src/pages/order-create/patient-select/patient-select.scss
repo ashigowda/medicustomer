@@ -1,0 +1,25 @@
+page-patient-select {
+  .row {
+    align-items: center;
+  }
+  .scroll-content {
+    overflow: auto;
+  }
+  .i-a {
+    color: gray;
+    font-size: 12px;
+  }
+  .label-md {
+    color: map-get($colors, dark) !important;
+    margin: 4px 8px 0px 5% !important;
+    font-size: 15px;
+  }
+  .label-ios {
+    color: map-get($colors, dark) !important;
+    margin: 4px 8px 0px 5% !important;
+    font-size: 15px;
+  }
+  .icon {
+    font-size: 25px;
+  }
+}

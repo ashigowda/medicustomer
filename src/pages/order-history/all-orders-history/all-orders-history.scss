@@ -1,0 +1,13 @@
+page-all-orders-history {
+  .col {
+    height: 28px;
+  }
+  .label {
+    margin: 0px !important;
+    color: map-get($colors, primary);
+  }
+}
+
+ion-app.md [padding-left] {
+  padding-left: 4px;
+}

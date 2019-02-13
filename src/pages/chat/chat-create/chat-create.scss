@@ -1,0 +1,77 @@
+page-chat-create {
+  .message {
+    color: map-get($colors, primary);
+    background-color: map-get($colors, map-get($colors, white-a)-a);
+    margin-left: 3%;
+  }
+  .message1 {
+    color: map-get($colors, primary);
+    background-color: map-get($colors, secondary);
+  }
+  .type {
+    border: 5px solid map-get($colors, map-get($colors, white-a)-a);
+    width: 76%;
+    background: map-get($colors, white-a);
+    margin: 2%;
+    height: 65px
+  }
+  .scroll-content {
+    overflow: hidden;
+  }
+  .label-m {
+    margin-top: 37px;
+    margin-left: 33px;
+  }
+  .btn1 {
+    margin-top: -58px;
+    margin-left: 80%;
+    background: none;
+    vertical-align: middle;
+  }
+  .ico1 {
+    font-size: 35px;
+    font-weight: bold;
+  }
+  button {
+    background: none;
+  }
+  .label-q {
+    margin-top: 37px;
+  }
+  .row {
+    align-items: center;
+  }
+  ion-label {
+    border-radius: 200px;
+  }
+  .scroll-content {
+    overflow-y: scroll;
+  }
+  .label-md {
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 0px;
+  }
+  .label-wp {
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 0px;
+  }
+  .div2 {
+    margin-top: -55%;
+    margin-left: 76%;
+    width: 70px;
+    height: 70px;
+    position: fixed;
+    border-radius: 100%;
+    background: map-get($colors, primary);
+  }
+  .icon2 {
+    color: map-get($colors, white-a);
+    padding-left: 20px;
+    padding-top: 10px;
+    font-size: 50px;
+  }
+}

@@ -1,0 +1,35 @@
+<ion-header>
+  <header-main [title]='title'></header-main>
+</ion-header>
+
+<ion-content>
+  <div class="div-a">Delivery Address</div>
+  <ion-label text-wrap>Kanaka Layout,Banashankari 3rd stage, Bangalore-560078,India</ion-label>
+
+  <ion-card padding-bottom>
+    <ion-label class="label-input" margin-left>House No:</ion-label>
+    <ion-input type="number" placeholder="House Number" [(ngModel)]="houseno"></ion-input>
+    <ion-label class="label-input" margin-left>Floor No:</ion-label>
+    <ion-input type="number" placeholder="Floor Number" [(ngModel)]="floorno"></ion-input>
+    <ion-label class="label-input" margin-left>Land Mark:</ion-label>
+    <ion-input type="text" placeholder="Land Mark" [(ngModel)]="land"></ion-input>
+  </ion-card>
+
+  <ion-label>
+    <b>Address Type</b>
+  </ion-label>
+  <ion-list radio-group>
+    <ion-row margin no-padding>
+      <ion-col col-4 no-padding no-margin>
+        <ion-radio margin-right></ion-radio>Home </ion-col>
+      <ion-col col-4 no-padding no-margin>
+        <ion-radio margin-right></ion-radio>Work</ion-col>
+      <ion-col col-4 no-padding no-margin>
+        <ion-radio margin-right></ion-radio>Office</ion-col>
+    </ion-row>
+  </ion-list>
+</ion-content>
+
+<ion-footer no-border>
+  <button ion-button class="button-footer" (click)="saveAddress()">Save Address</button>
+</ion-footer>

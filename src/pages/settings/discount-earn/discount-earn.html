@@ -1,0 +1,16 @@
+<ion-header>
+  <header-main [title]="title"></header-main>
+</ion-header>
+
+<ion-content>
+  <img src="../assets/imgs/gift.jpg" alt="your image" class="div-circle1" no-margin>
+  <ion-label style="text-align:center" margin-top margin-bottom class="medium">Promo code</ion-label>
+  <ion-input [(ngModel)]="input" margin-top margin-bottom></ion-input>
+
+  <ion-label style="text-align:center" margin-top margin-bottom text-wrap class="x-small">Refer a friend and get FLAT 25% off on your next order and your friend gets FLAT 25% of on their 1st medicine order.So
+    Refer Away! </ion-label>
+</ion-content>
+
+<ion-footer no-border>
+  <button ion-button class="button-footer" (click)="gotoapps()">Invite Friends</button>
+</ion-footer>

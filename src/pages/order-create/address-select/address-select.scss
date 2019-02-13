@@ -1,0 +1,22 @@
+page-address-select {
+  .scroll-content {
+    overflow: hidden;
+  }
+  .row {
+    align-items: center;
+  }
+  .icon {
+    font-size: 35px;
+    font-weight: bold;
+  }
+  .label-md {
+    color: map-get($colors, dark) !important;
+    margin: 4px 8px 0px 5% !important;
+    font-size: 15px;
+  }
+  .label-ios {
+    color: map-get($colors, dark) !important;
+    margin: 4px 8px 0px 5% !important;
+    font-size: 15px;
+  }
+}

@@ -1,0 +1,80 @@
+page-chat-details {
+  .icon {
+    color: map-get($colors, primary);
+    font-size: 35px;
+  }
+  .message {
+    color: map-get($colors, primary);
+    background-color: map-get($colors, white-a);
+    margin-left: 3%;
+  }
+  .message1 {
+    color: map-get($colors, primary);
+    background-color: map-get($colors, secondary);
+  }
+  .type {
+    border: 1px solid map-get($colors, primary);
+    height: 12%;
+    width: 100%;
+    margin-top: 24.3%;
+  }
+  .scroll-content {
+    overflow-y: scroll;
+  }
+  .btn1 {
+    margin-top: -200px;
+    margin-left: 80%;
+    background: none;
+  }
+  .type {
+    border: 5px solid map-get($colors, white-a);
+    width: 76%;
+    background: map-get($colors, white-a);
+    margin: 2%;
+    height: 65px
+  }
+  .div2 {
+    top: 65px;
+    right: 18px;
+    width: 55px;
+    height: 55px;
+    border-radius: 100%;
+    background: map-get($colors, primary);
+    position: fixed;
+  }
+  .btn5 {
+    width: 100%;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 100%;
+    color: map-get($colors, white-a);
+    font-weight: bold;
+    background: map-get($colors, primary);
+  }
+  ion-fab[top] {
+    top: 0;
+  }
+  .fab1 {
+    color: map-get($colors, white-a);
+    font-weight: bold;
+    font-size: 30px;
+  }
+  .icon2 {
+    color: map-get($colors, white-a);
+    padding-top: 0px;
+    font-size: 15px;
+  }
+  ion-label {
+    border-radius: 200px;
+  }
+  textarea {
+    width: 80%;
+    border: none
+  }
+  .footer {
+    background-color: map-get($colors, light);
+  }
+  .fab ion-icon {
+    color: map-get($colors, white-a);
+  }
+}

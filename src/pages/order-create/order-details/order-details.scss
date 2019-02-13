@@ -1,0 +1,26 @@
+page-order-details {
+  .scroll-content {
+    overflow: auto;
+  }
+  .item-wp {
+    padding-left: 16px;
+    padding-right: 0;
+    position: relative;
+    font-size: 1.6rem;
+    font-weight: normal;
+    text-transform: none;
+    color: #000;
+    background-color: map-get($colors, white-a);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    margin-left: 16px;
+  }
+  .img-a{
+    height: 80px;
+    width: 100px;
+  }
+}
+
+img {
+  margin-left: 5%;
+}

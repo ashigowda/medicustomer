@@ -1,0 +1,33 @@
+page-wallet-transactions {
+  .even {
+    background: map-get($colors, white-b);
+    color: map-get($colors, primary);
+  }
+  .odd {
+    background: map-get($colors, white-a);
+    color: map-get($colors, primary);
+    ;
+  }
+  .header2 {
+    font-weight: bold;
+    background: map-get($colors, primary);
+    color: map-get($colors, white-a);
+    padding-bottom: 15px;
+    padding-top: 15px;
+    text-align: center;
+  }
+  .col {
+    align-items: center;
+    text-align: center;
+  }
+  .label {
+    font-size: 16px;
+    font-weight: normal;
+    color: map-get($colors, primary);
+    margin-left: 0%;
+  }
+  ion-item {
+    width: 100% !important;
+    text-align: center;
+  }
+}

@@ -1,0 +1,11 @@
+page-dosagereminder-list {
+  .row {
+    align-items: center;
+  }
+  .icon {
+    color: map-get($colors, primary);
+    font-size: 30px;
+    margin: 0px;
+    padding: 0px;
+  }
+}

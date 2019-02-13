@@ -1,0 +1,36 @@
+page-order-details-delivery {
+  .image {
+    width: 50px;
+    height: 50px;
+  }
+  .item {
+    background: none !important
+  }
+  .text {
+    text-align: right;
+  }
+  .scroll-content {
+    overflow-y: scroll;
+    margin-top: 56px !important;
+    margin-bottom: 0px !important;
+  }
+  .content {
+    color: map-get($colors, dark) !important;
+  }
+  .div-a {
+    background-color: #f5f5f5;
+    width: 100%;
+    margin-left: 3px;
+  }
+  .icon-a {
+    font-size: 30px;
+  }
+  .radio-a {
+    margin-top: -100%;
+    font-size: 20px;
+  }
+  .img-a {
+    height: 50px;
+    width: 60px;
+  }
+}

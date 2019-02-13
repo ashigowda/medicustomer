@@ -1,0 +1,52 @@
+<ion-header>
+  <header-main [title]="title"></header-main>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-label class="medium light">Medicine Name:</ion-label>
+    <ion-input type="text" placeholder="Name" [(ngModel)]="name"></ion-input>
+
+    <ion-row no-padding no-margin>
+      <ion-col col-6 no-padding no-margin>
+        <ion-label padding-left class="medium light">Dosage:</ion-label>
+        <ion-input type="text" placeholder="dosage" [(ngModel)]="dosage" class="small"></ion-input>
+      </ion-col>
+      <ion-col col-6 no-padding no-margin>
+        <ion-label padding-left class="medium light"> Tablet</ion-label>
+        <ion-input type="text" placeholder="Tablet" [(ngModel)]="tablet" class="small"></ion-input>
+      </ion-col>
+    </ion-row>
+
+    <ion-row no-padding no-margin>
+      <ion-col col-6 no-padding no-margin>
+        <ion-label padding-left class="medium light">start Date:</ion-label>
+        <ion-input type="date" placeholder="Email" [(ngModel)]="email" class="small"></ion-input>
+      </ion-col>
+      <ion-col col-6 no-padding no-margin>
+        <ion-label padding-left class="medium light">Till how long:</ion-label>
+        <ion-input type="number" placeholder="date" [(ngModel)]="date" class="small"></ion-input>
+      </ion-col>
+    </ion-row>
+
+    <ion-label class="medium light">Number Of Reminders a Day:</ion-label>
+    <ion-input type="number" placeholder="Name" [(ngModel)]="name2"></ion-input>
+
+    <ion-label class="medium light">Time Of 1st Reminder:</ion-label>
+    <ion-input type="text" placeholder="Name" [(ngModel)]="name1"></ion-input>
+
+    <ion-label class="medium light">Time difference between two Reminders:</ion-label>
+    <ion-input type="text" placeholder="Name" [(ngModel)]="name2" margin-bottom></ion-input>
+  </ion-card>
+</ion-content>
+
+<ion-footer no-border no-padding no-margin>
+  <ion-row>
+    <ion-col col-6>
+      <button ion-button class="button-footer" (click)="gotoreminderslist()">Update</button>
+    </ion-col>
+    <ion-col col-6>
+      <button ion-button class="button-footer" (click)="gotoReviewOrderPage()">Cancel</button>
+    </ion-col>
+  </ion-row>
+</ion-footer>
